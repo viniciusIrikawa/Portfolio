@@ -187,7 +187,7 @@ main .section{
     width: 100%;
 }
 .conhecimentos{
-    height: 30vh;
+    height: 50vh;
     display: flex;
     flex-flow: wrap;
     justify-content: space-around;
@@ -346,6 +346,7 @@ footer a:hover{
 
     /* SECTION 2 */
     .conhecimentos{
+        height: 40vh;
         justify-content: center;
     }
     .conhecimentos .card{
