@@ -180,7 +180,6 @@ main .section{
 
 /* SECTION 1 */
 .sobre{
-    height: 50vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -191,7 +190,6 @@ main .section{
     width: 100%;
 }
 .conhecimentos{
-    height: 50vh;
     display: flex;
     flex-flow: wrap;
     justify-content: space-around;
@@ -350,12 +348,11 @@ footer a:hover{
 
     /* SECTION 2 */
     .conhecimentos{
-        height: 40vh;
         justify-content: center;
     }
     .conhecimentos .card{
         max-width: 150px;
-        margin: 0 20px;
+        margin: 30px;
     }
 }
 
