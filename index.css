@@ -331,7 +331,7 @@ footer a:hover{
         display: flex;
         align-items: center;
         list-style: none;
-        border-radius: 0 0 15px 15px;
+        
     }
 
     .nav-menu ul li{
