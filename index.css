@@ -266,6 +266,7 @@ main .section{
     width: 120px;
     border-radius: 10px;
     margin: 10px;
+    text-decoration: none;
     background-color: #222020;
     display: flex;
     align-items: center;
@@ -278,7 +279,7 @@ main .section{
 .wrapper-contacts .contact p{
     margin-bottom: 5px;
 }
-.wrapper-contacts .contact a{
+.wrapper-contacts .contact {
     color: rgba(255, 255, 255, 0.425);
     font-size: 1.2em;
 
