@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title> Portfolio - Vinícius Irikawa </title>
 </head>
 <body>
@@ -42,7 +43,7 @@
     </section>
 
     <main>
-        <section class="section sobre" id="sobre">
+        <section class="section sobre" id="sobre" data-aos="fade-right" data-aos-duration="2300">
             <!-- <div class="wrapper-pre-section"><span class="pre-section"> //Sobre </span></div> -->
             <h2> 01. Sobre mim </h2>
             <pre>
@@ -63,8 +64,7 @@
             </pre>
         </section>
 
-        <section class="section conhecimentos" id="conhecimentos">
-            <!-- <div class="wrapper-pre-section"><span class="pre-section">  //Conhecimentos </span></div> -->
+        <section class="section conhecimentos" id="conhecimentos" data-aos="fade-left" data-aos-duration="2300">
             <h2> 02. Conhecimentos </h2>
             <div class="card"> 
                 <i class="fa-brands fa-html5"></i>
@@ -89,28 +89,26 @@
         </section>
 
         <section class="section projetos" id="projetos">
-            <!-- <div class="wrapper-pre-section"><span class="pre-section">  //Projetos </span></div> -->
         </section>
         
         <section class="section contato" id="contato"> 
-            <!-- <div class="wrapper-pre-section"><span class="pre-section">  //Contato </span></div> -->
-            <h2> 03. Contato </h2>
-            <p> Visite... </p>
+            <h2 data-aos="fade-right" data-aos-duration="1000"> 03. Contato </h2>
+            <p data-aos="fade-right" data-aos-duration="1000"> Visite... </p>
             <div class="wrapper-contacts">
-                <a href="https://br.linkedin.com/in/vinícius-irikawa" target="_blank" class="contact">
+                <a href="https://br.linkedin.com/in/vinícius-irikawa" target="_blank" class="contact" data-aos="fade-up" data-aos-duration="1000">
                     <p>Linkedin</p>
                     <i class="fa-brands fa-linkedin"></i>
                 </a>
 
-                <a href="https://api.whatsapp.com/send?phone=+5579988545007&text=Olá%20Vinícius!" target="_blank" class="contact">
+                <a href="https://api.whatsapp.com/send?phone=+5579988545007&text=Olá%20Vinícius!" target="_blank" class="contact" data-aos="fade-up" data-aos-duration="1150">
                     <p>Whatsapp</p>
                    <i class="fa-brands fa-whatsapp"></i>
                 </a>
-                <a href="mailto:viniciusiandrade@hotmail.com" target="_blank" class="contact">
+                <a href="mailto:viniciusiandrade@hotmail.com" target="_blank" class="contact" data-aos="fade-up" data-aos-duration="1250">
                     <p>E-mail</p>
                    <i class="fa-solid fa-at"></i>
                 </a>
-                <a href="https://github.com/viniciusIrikawa" target="_blank" class="contact">
+                <a href="https://github.com/viniciusIrikawa" target="_blank" class="contact" data-aos="fade-up" data-aos-duration="1350">
                     <p>Github</p>
                     <i class="fa-brands fa-github"></i>
                 </a>
@@ -123,5 +121,9 @@
         <a href="#"> subir(); </a>
      </footer>
     <script src="scripts/scripts.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 </html>
