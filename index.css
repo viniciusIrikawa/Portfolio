@@ -267,12 +267,12 @@ main .section{
     bottom: 5%;
     right: 3%;
     color: #ffffffd6;
-    padding: 5px 7px;
+    padding: 2px 6px;
     border-radius: 50px;
     border: 2px solid #ffffffd6;
 }
-details{
-    z-index: 5 !important;
+.fa-share{
+    font-size: 13px;
 }
 
 /* SECTION 4 */
