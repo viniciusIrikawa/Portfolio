@@ -74,7 +74,7 @@ body{
 }
 
 header{
-    height: 100vh;
+    height: 95vh;
     max-width: initial;
 }
 .nav-menu{
@@ -183,8 +183,7 @@ header span{
 main .section{
     text-align: justify;
     padding: 0 3%;
-    margin-bottom: 150px;
-    /* margin: 150px 0 250px 0; */
+    margin-bottom: 120px;
 }
 
 /* SECTION 1 */
@@ -237,6 +236,46 @@ main .section{
 }
 
 /* SECTION 3 */
+.wrapper-project{
+    width: 100%;
+    display: flex;
+    flex-flow: wrap; 
+    flex-direction: row;  
+    justify-content: center;
+}
+
+.card-project{
+    position: relative;
+    width: 500px;
+    height: auto;
+    margin: 10px 0;
+    overflow: hidden;
+}
+.overlay{
+    position: absolute;
+    top: 0%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#2c2a2c61, #49226e8f);
+}
+.card-project img{
+    width: 100%;
+}
+.card-project .icon-share{
+    position: absolute;
+    bottom: 5%;
+    right: 3%;
+    color: #ffffffd6;
+    padding: 5px 7px;
+    border-radius: 50px;
+    border: 2px solid #ffffffd6;
+}
+details{
+    z-index: 5 !important;
+}
+
+/* SECTION 4 */
 .wrapper-contacts{
     width: 100%;
     display: flex;
@@ -360,8 +399,8 @@ footer a:hover{
         max-width: 1280px;
     }
     main .section{
-        padding: 200px 3% 0 3%;
-        margin-bottom: 300px;
+        padding: 150px 3% 0 3%;
+        margin-bottom: 200px;
     }
     .pre-section{
         font-size: 4em;
@@ -374,6 +413,14 @@ footer a:hover{
     .conhecimentos .card{
         max-width: 150px;
         margin: 30px;
+    }
+
+    /* SECTION 3 */
+    .wrapper-project{
+        flex-direction: column;
+    }
+    .card-project{
+        width: 650px;
     }
 }
 

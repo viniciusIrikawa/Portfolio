@@ -24,7 +24,8 @@
                 <ul class="wrapper-list">
                     <li> <a href="#"> Home </a> </li>
                     <li> <a href="#sobre"> Sobre mim </a> </li>
-                    <li> <a href="#conhecimentos"> Conhecimentos</a> </li>
+                    <li> <a href="#conhecimentos"> Conhecimentos </a> </li>
+                    <li> <a href="#projetos"> Projetos </a> </li>
                     <li> <a href="#contato"> Contato </a> </li>
                     <li> <a href="resume/Curriculo.pdf" class="btn-resume" target="_blank"> Currículo </a> </li>
                 </ul>
@@ -43,22 +44,27 @@
     </section>
 
     <main>
-        <section class="section sobre" id="sobre" data-aos="fade-right" data-aos-duration="2300">
-            <!-- <div class="wrapper-pre-section"><span class="pre-section"> //Sobre </span></div> -->
-            <h2> 01. Sobre mim </h2>
-            <pre>
+        <section class="section sobre" id="sobre" >
+            <h2 data-aos="fade-up" data-aos-duration="1000"> 01. Sobre mim </h2>
+            <pre data-aos="fade-up" data-aos-duration="2000">
 { 
     <span class="key">"Idade"</span>: 21,
     <span class="key">"Nacionalidade"</span>: "Brasileiro", 
     <span class="key">"Cidade"</span>: "Aracaju", 
     <span class="key">"Estado"</span>: "Sergipe", 
     <span class="key">"Curso"</span>: "Ciência da Computação", 
+    <span class="key">"Personalidade"</span>: [
+        "Criativo", 
+        "Humorado",
+        "Autêntico",
+        "Esforçado"
+    ]
     <span class="key">"Hobbies"</span>: [
         "Programar", 
-        "Investir em Cripto",
-        "Ouvir Música",
-        "Viajar",
-        "Ir à praia"
+        "Cripto",
+        "Músicas",
+        "Viagens",
+        "Praia"
     ]
 }
             </pre>
@@ -89,10 +95,34 @@
         </section>
 
         <section class="section projetos" id="projetos">
+            <h2 data-aos="fade-up" data-aos-duration="1000"> 03. Projetos </h2>
+            <div class="wrapper-project">
+                <div data-aos="fade-up" data-aos-duration="2000" class="card-project">
+                    <div class="overlay"></div>
+                    <a class="icon-share" href="https://fruit-cart.herokuapp.com/" target="_blank">
+                        <i class="fa-solid fa-share"></i>
+                    </a>
+                    <img alt="" src="media/img/fruit-cart-img.png">
+                </div>
+                <div data-aos="fade-up" data-aos-duration="2100" class="card-project">
+                    <div class="overlay"></div>
+                    <a class="icon-share" href="https://viniciusirikawa.github.io/Todo-List/" target="_blank">
+                        <i class="fa-solid fa-share"></i>
+                    </a>
+                    <img src="media/img/todo-list-img.png">
+                </div>
+                <div data-aos="fade-up" data-aos-duration="2200" class="card-project">
+                    <div class="overlay"></div>
+                    <a class="icon-share" href="https://viniciusirikawa.github.io/GuessTheNumber/" target="_blank">
+                        <i class="fa-solid fa-share"></i>
+                    </a>
+                    <img src="media/img/guess-the-number-img.png">
+                </div>
+            </div>
         </section>
         
         <section class="section contato" id="contato"> 
-            <h2 data-aos="fade-right" data-aos-duration="1000"> 03. Contato </h2>
+            <h2 data-aos="fade-right" data-aos-duration="1000"> 04. Contato </h2>
             <p data-aos="fade-right" data-aos-duration="1000"> Visite... </p>
             <div class="wrapper-contacts">
                 <a href="https://br.linkedin.com/in/vinícius-irikawa" target="_blank" class="contact" data-aos="fade-up" data-aos-duration="1000">
@@ -114,6 +144,7 @@
                 </a>
             </div>
         </section>
+
     </main>
 
     <footer> 
