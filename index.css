@@ -248,7 +248,6 @@ main .section{
     position: relative;
     width: 500px;
     height: auto;
-    margin: 10px 0;
     overflow: hidden;
 }
 .overlay{
@@ -264,12 +263,13 @@ main .section{
 }
 .card-project .icon-share{
     position: absolute;
-    bottom: 5%;
-    right: 3%;
+    bottom: 6%;
+    right: 2%;
     color: #ffffffd6;
     padding: 2px 6px;
     border-radius: 50px;
     border: 2px solid #ffffffd6;
+    
 }
 .fa-share{
     font-size: 13px;
