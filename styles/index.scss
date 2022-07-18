@@ -1,0 +1,175 @@
+@import 'reset';
+@import 'variables';
+
+
+/* SCROLL BAR */
+::-webkit-scrollbar{
+    display: none;
+}
+
+pre{
+    color: $white-ice;
+}
+
+h1{
+    color: $white-ice;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+h2{
+    color: $section-title;
+    font-size: 1rem;
+    font-weight: 100;
+    margin: 20px 0;
+
+&:before{
+        content: '';
+        width: 50px;
+        height: 1px;
+        background-color: #c567ff;
+        display: inline-block;
+        margin-bottom: 4px;
+    }
+}
+
+p{
+    color: $gray;
+}
+
+body{
+    background-color: $body-background;
+}
+
+@mixin flexAlignCenter ($flex-direction){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: $flex-direction;
+}
+
+.whatsapp-button{
+    @include flexAlignCenter();
+    position: fixed;
+    bottom: 3%;
+    right: 3%;
+    width: 60px;
+    height: 60px;
+    color: #fff;
+    background-color: #61C963;
+    border-radius: 50px;
+    font-size: 30px;
+    z-index: 5;
+}
+
+/* HEADER / MENU */
+header{
+    height: 95vh;
+    max-width: initial;
+
+    #checkbox{
+        display: none;
+    }
+    .lbl-check{
+        position: absolute;
+        top: 2%;
+        right: 8%;
+        color: $white-ice;
+        font-size: 30px;
+        user-select: none;
+        z-index: 100;
+    }
+    .nav-menu{
+        z-index: 10;
+
+        ul{
+            @include flexAlignCenter();
+            flex-direction: column;
+            background: linear-gradient(#1e0220, #350238);
+            padding: 20px 0px 30px 0;
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            transition: 0.4s ease;
+        }
+
+        
+        li{
+            padding: 15px 0;
+
+            a{
+                color: $section-title;
+                
+                &:hover{
+                    text-shadow: 0px 0px 5px #b949ff;
+                    color: #d99dff;
+                }
+            }
+        }
+        .btn-resume{
+            border: 1px solid $btn-resume-purple;
+            width: 120px;
+            margin-top: 10px;
+            padding: 5px 10px;
+            position: relative;
+            text-align: center;
+            color: #b949ff;
+            transition: 0.3s;
+            
+            &:after{
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                content: '';
+                width: 100%;
+                height: 0%;
+                background-color: $btn-resume-purple;
+                z-index: -1;
+                transition: 0.3s;
+            }
+            
+            &:hover{
+                color: #FFF !important;
+                &::after{
+                    height: 100%;
+                    box-shadow: 0px 0px 10px $btn-resume-purple;
+                }
+            }
+        }
+
+    }
+
+    #checkbox:checked ~ nav ul {
+        left: 0;
+    }
+
+    .conteiner{
+        @include flexAlignCenter();
+        flex-direction: column;
+        margin-top: 10vh;
+        
+        .header-text{
+            display: flex;
+            flex-direction: column;
+            margin-top: 70px;
+            padding: 5%;
+
+            p{
+               color: $gray;
+               margin-top: 7px;
+               width: 320px;
+           }
+
+           span{
+                color: #4ce100;
+                font-size: 1.5rem;
+                font-weight: map-get($font-weight, medium);
+           }
+        }
+        
+    }
+
+}
+
+@media screen and (min-width: 768px){}

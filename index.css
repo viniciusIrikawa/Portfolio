@@ -37,7 +37,7 @@ p{
 }
 
 body{
-    background-color: rgb(34 32 32);
+    background-color: rgb(34, 32, 32);
 }
 
 /* WHATSAPP BUTTON */
@@ -97,7 +97,7 @@ header{
 #checkbox:checked ~ nav ul {
     left: 0;
 }
-
+    
 .nav-menu ul li {
     padding: 15px 0;
 }
