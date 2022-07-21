@@ -49,7 +49,7 @@ body{
 }
 
 .whatsapp-button{
-    @include flexAlignCenter();
+    @include flexAlignCenter(column);
     position: fixed;
     bottom: 3%;
     right: 3%;
@@ -83,8 +83,7 @@ header{
         z-index: 10;
 
         ul{
-            @include flexAlignCenter();
-            flex-direction: column;
+            @include flexAlignCenter(column);
             background: linear-gradient(#1e0220, #350238);
             padding: 20px 0px 30px 0;
             position: absolute;
@@ -145,8 +144,7 @@ header{
     }
 
     .conteiner{
-        @include flexAlignCenter();
-        flex-direction: column;
+        @include flexAlignCenter(column);
         margin-top: 10vh;
         
         .header-text{
@@ -167,9 +165,69 @@ header{
                 font-weight: map-get($font-weight, medium);
            }
         }
+
+        .wrapper-img{
+            position: relative;
+            margin-top: 50px;
+            border: 2px solid #c567ff;
+            width: 250px;
+            height: 265px;
+
+            .img-profile{
+                position: absolute;
+                top: -20px;
+                left: -20px;
+                box-shadow: 5px 5px 10px rgb(0 ,0 ,0, 0.3)
+            }
+            
+        }
         
     }
 
+}
+
+main{
+    .section{
+        text-align: justify;
+        padding: 0 3%;
+        margin-bottom: 120px;
+    }
+
+    .sobre{
+        @include flexAlignCenter(column);
+
+        .key{
+            color: #4ce100;
+        }
+    }
+
+    .conhecimentos{
+        display: flex;
+        flex-flow: wrap;
+        justify-content: space-around;
+
+        h2{
+            width: 100%;
+        }
+
+        .card{
+            @include flexAlignCenter(column);
+            position: relative;
+            border-radius: 10px;
+            width: 40%;
+            height: 100px;
+            backdrop-filter: blur(5px);
+            margin: 10px 0px;
+            border: 1px solid $section-title;
+            background-color: #c567ff14;
+            z-index: -1;
+
+            i{
+                font-size: 2.3em;
+                color: #ddd;
+            }
+        }
+    }
 }
 
 @media screen and (min-width: 768px){}
