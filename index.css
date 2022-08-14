@@ -274,6 +274,19 @@ main .section{
 .fa-share{
     font-size: 13px;
 }
+.tooltip{
+    position: fixed;
+    width: fit-content;
+    color: #ddd;
+    background: #4c007bd1;
+    padding: 10px 20px 15px 20px;
+    border-radius: 8px;
+    backdrop-filter: blur(3px);
+    display: none;
+}
+ul:hover .tooltip{
+    display: block;
+}
 
 /* SECTION 4 */
 .wrapper-contacts{
