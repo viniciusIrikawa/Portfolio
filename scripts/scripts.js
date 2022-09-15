@@ -22,10 +22,11 @@ headerBar();
 
 const tooltip = () => {
     const cardIndex = {
-        0: ["Projeto: Add to cart \nBiblioteca: React Js \nResponsivo: 🟢 \nStatus: 🟢Finalizado"],
-        1: ["Projeto: Todo List \nBiblioteca: React Js \nResponsivo: 🟢 \nStatus: 🟠Finalizando..."], 
-        2: ["Projeto: Guess the Number \nLinguagens: HTML, CSS, JS \nResponsivo: 🟢 \nStatus: 🟢Finalizado"],
-        3: ["Projeto: Search Movies\nLinguagens: HTML, CSS, JS \nResponsivo: 🟢 \nStatus: 🟢Finalizado"]
+        0: ["Projeto: Nice Beer \nBiblioteca: React Js \nResponsivo: 🟢 \nStatus: 🟠Finalizando..."],
+        1: ["Projeto: Add to cart \nBiblioteca: React Js \nResponsivo: 🟢 \nStatus: 🟢Finalizado"],
+        2: ["Projeto: Todo List \nBiblioteca: React Js \nResponsivo: 🟢 \nStatus: 🟠Finalizando..."], 
+        3: ["Projeto: Guess the Number \nLinguagens: HTML, CSS, JS \nResponsivo: 🟢 \nStatus: 🟢Finalizado"],
+        4: ["Projeto: Search Movies\nLinguagens: HTML, CSS, JS \nResponsivo: 🟢 \nStatus: 🟢Finalizado"]
     };
 
     const tooltip = document.querySelector('.tooltip');
