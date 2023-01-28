@@ -22,11 +22,37 @@ headerBar();
 
 const tooltip = () => {
     const cardIndex = {
-        0: ["Projeto: Nice Beer \nBiblioteca: React Js \nResponsivo: 🟢 \nStatus: 🟠Finalizando..."],
-        1: ["Projeto: Add to cart \nBiblioteca: React Js \nResponsivo: 🟢 \nStatus: 🟢Finalizado"],
-        2: ["Projeto: Todo List \nBiblioteca: React Js \nResponsivo: 🟢 \nStatus: 🟠Finalizando..."], 
-        3: ["Projeto: Guess the Number \nLinguagens: HTML, CSS, JS \nResponsivo: 🟢 \nStatus: 🟢Finalizado"],
-        4: ["Projeto: Search Movies\nLinguagens: HTML, CSS, JS \nResponsivo: 🟢 \nStatus: 🟢Finalizado"]
+        0: [`Nome: Healthy
+            Tipo: Sistema de agendamento de consultas
+            Stacks: MongoDB, ExpressJs, ReactJs, NodeJs, \nAxios, JWT-Authentication, Typescript, Tailwind CSS 
+            Status: 🟠Finalizando...`
+        ],
+        1: [`Nome: SoundSea
+            Tipo: App de música
+            Stacks: ReactJs, Redux, Axios, \nVite, Tailwind CSS
+            Status: 🟠Finalizando...`
+        ],
+        2: [`Nome: Nice Drink
+            Tipo: E-Commerce
+            Stacks: ReactJs, NextJs, Typescript, \nTailwind CSS, Context Api 
+            Status: 🟢Finalizado`
+        ],
+        3: [`Nome: Add to cart
+            Tipo: E-Commerce
+            Stacks: React Js, Context Api
+            Status: 🟢Finalizado`
+        ],
+        4: [`Nome: Todo List
+            Tipo: Listagem de tarefas
+            Stacks: React Js, Context Api
+            Status: 🟢Finalizado`
+        ], 
+        5: [`Nome: Guess the Number
+            Tipo: Jogo 
+            Stacks: HTML, CSS, Javascript
+            Status: 🟢Finalizado
+            `]
+       
     };
 
     const tooltip = document.querySelector('.tooltip');

@@ -93,6 +93,7 @@ header{
     left: -100%;
     width: 100%;
     transition: 0.4s ease;
+    z-index: 10;
 }
 #checkbox:checked ~ nav ul {
     left: 0;
@@ -148,7 +149,7 @@ header{
 
 .header-text p{
     color: rgba(255, 255, 255, 0.425);
-    margin-top: 7px;
+    margin: 7px 0 10px 0;
     width: 320px;
 }
 
@@ -242,6 +243,10 @@ main .section{
     flex-flow: wrap; 
     flex-direction: row;  
     justify-content: center;
+    margin-top: 40px;
+}
+.subtext{
+    color: rgba(255, 255, 255, 0.425);
 }
 
 .card-project{
