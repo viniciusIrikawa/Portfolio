@@ -24,6 +24,13 @@ h2{
     font-weight: 100;
     margin: 20px 0;
 }
+
+h3{
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 100;
+
+}
 h2::before{
     content: '';
     width: 50px;
@@ -237,6 +244,54 @@ main .section{
 }
 
 /* SECTION 3 */
+/* .experience::before{
+    content: '';
+    display: inline-block;
+    background-color: #c567ff;
+    width: 5px;
+    height: 80px;
+    margin-right: 10px;
+} */
+
+.experience{
+    display: flex;
+    align-items: flex-start;
+    color: #fff;
+    list-style: none;
+    margin: 5% 0;
+}
+
+.experience img{
+    width: 8%;
+}
+
+.experience 
+.experience-content{
+    margin-left: 2%;
+}
+
+.experience 
+.experience-content
+.list-technologies{
+    margin-top: 1%;
+    display: flex;
+}
+
+.experience 
+.experience-content
+.list-technologies
+.item{
+    list-style: none;
+    background-color: rgb(90 90 90 / 43%);
+    color: #fff;
+    font-size: 0.6rem;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+
+/* SECTION 4 */
 .wrapper-project{
     width: 100%;
     display: flex;
@@ -293,7 +348,7 @@ ul:hover .tooltip{
     display: block;
 }
 
-/* SECTION 4 */
+/* SECTION 5 */
 .wrapper-contacts{
     width: 100%;
     display: flex;
@@ -434,6 +489,8 @@ footer a:hover{
     }
 
     /* SECTION 3 */
+
+    /* SECTION 4 */
     .wrapper-project{
         flex-direction: column;
         align-items: center;
