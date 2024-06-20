@@ -22,37 +22,34 @@ headerBar();
 
 const tooltip = () => {
     const cardIndex = {
-        0: [`Nome: Healthy
+        0: [`Projeto: Crypto+
+            Tipo: Plataforma de criptomoedas em tempo real
+            Stacks: ReactJs, NodeJs, Typescript, \nTailwind CSS, WebSocket`
+        ],
+        1: [`Projeto: Healthy
             Tipo: Sistema de agendamento de consultas
-            Stacks: MongoDB, ExpressJs, ReactJs, NodeJs, \nAxios, JWT-Authentication, Typescript, Tailwind CSS 
-            Status: 🟠Finalizando...`
+            Stacks: MongoDB, ExpressJs, ReactJs, NodeJs, \nAxios, JWT-Authentication, Typescript, Tailwind CSS`
         ],
-        1: [`Nome: SoundSea
+        2: [`Projeto: SoundSea
             Tipo: App de música
-            Stacks: ReactJs, Redux, Axios, \nVite, Tailwind CSS
-            Status: 🟠Finalizando...`
+            Stacks: ReactJs, Redux, Axios, \nVite, Tailwind CSS`
         ],
-        2: [`Nome: Nice Drink
+        3: [`Projeto: Nice Drink
             Tipo: E-Commerce
-            Stacks: ReactJs, NextJs, Typescript, \nTailwind CSS, Context Api 
-            Status: 🟢Finalizado`
+            Stacks: ReactJs, NextJs, Typescript, \nTailwind CSS, Context Api`
         ],
-        3: [`Nome: Add to cart
+        4: [`Projeto: Add to cart
             Tipo: E-Commerce
-            Stacks: React Js, Context Api
-            Status: 🟢Finalizado`
+            Stacks: React Js, Context Api`
         ],
-        4: [`Nome: Todo List
+        5: [`Projeto: Todo List
             Tipo: Listagem de tarefas
-            Stacks: React Js, Context Api
-            Status: 🟢Finalizado`
+            Stacks: React Js, Context Api`
         ], 
-        5: [`Nome: Guess the Number
+        6: [`Projeto: Guess the Number
             Tipo: Jogo 
-            Stacks: HTML, CSS, Javascript
-            Status: 🟢Finalizado
-            `]
-       
+            Stacks: HTML, CSS, Javascript`
+        ]
     };
 
     const tooltip = document.querySelector('.tooltip');
